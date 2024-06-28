@@ -1,3 +1,8 @@
+var apiKey = 'your_new_api_key_here';
+var apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3&aqi=no&alerts=no`; 
+//  HELP :) , lmfrod ahot al apiUrl dah bdl elly fe line 14, 3lshan yshtghl m3 ay had bl api key bt3o,bs lma b3ml keda mosh byshtghl
+//lnytga eno mosh shghal 3la git hub m3 eno shghal m3aya wlahy:'(
+
 function fetchWeather() {
     const city = document.getElementById('city').value;
     if (!city) {
