@@ -11,7 +11,7 @@ function fetchWeather() {
     }
 
     var myHttp = new XMLHttpRequest();
-    myHttp.open('GET', `http://api.weatherapi.com/v1/forecast.json?key=43dd25338f284b699f8132118242706&q=${city}&days=3&aqi=no&alerts=no`);
+    myHttp.open('GET', `https://api.weatherapi.com/v1/forecast.json?key=43dd25338f284b699f8132118242706&q=${city}&days=3&aqi=no&alerts=no`);
     myHttp.send();
 
     myHttp.addEventListener('load', function () {
